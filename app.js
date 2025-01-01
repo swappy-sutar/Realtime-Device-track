@@ -27,13 +27,13 @@ io.on("connection", (socket) => {
   console.log("Client connected");
 
   socket.on("send-location", (data) => {
-    io.emit("receive-location", { id: socket.id, ...data });
+    const { latitude, longitude, name } = data;
+    io.emit("receive-location", { id: socket.id, latitude, longitude, name });
   });
 
   socket.on("disconnect", () => {
     io.emit("user-disconnect", socket.id);
   });
 });
-
 
 export { app, server };
