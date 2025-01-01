@@ -30,21 +30,21 @@ Ensure you have the following installed on your system:
 ### Steps
 
 1. Clone the repository:
-   ```bash
+```bash
    git clone https://github.com/your-username/real-time-tracking-app.git
    cd real-time-tracking-app
-   ```
+```
 
 2. Install dependencies:
 
- ```bash
+```bash
     npm install
-  ```
+```
 
 3. Setup environment variables: Create a .env file in the root directory and add the following:
- ```bash
+```bash
    PORT=800
-  ```
+```
 
 4. Start the application:
 ```bash
